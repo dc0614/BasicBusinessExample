@@ -7,16 +7,8 @@
     android:background="#FF5722"
     tools:context="com.example.android.basicbusinessexample.MainActivity">
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!-- Content here -->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="U C DC Photography"
                 android:background="#1A237E"
@@ -25,18 +17,19 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:scaleType="centerInside"
+                android:contentDescription="Puppy Picture"
                 android:src="@drawable/sample_02" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Let Us Catch Your Special Moments!\nContact Us @ 313-123-4567"
                 android:background="#1A237E"
                 android:gravity="center_horizontal"
                 android:textSize="36sp"/>
-        </LinearLayout>
-    </ScrollView>
+
 
 </LinearLayout>
